@@ -1,0 +1,452 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><title>JSDelivr 国内加速技巧｜通过括彩云公益镜像实现高速访问体验 | Eilo小窝</title><meta name="keywords" content="网站加速,CDN,JSDelivr,括彩云"><meta name="author" content="Eilo"><meta name="copyright" content="Eilo"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f7f9fe"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="JSDelivr 国内加速技巧｜通过括彩云公益镜像实现高速访问体验"><meta name="application-name" content="JSDelivr 国内加速技巧｜通过括彩云公益镜像实现高速访问体验"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#f7f9fe"><meta property="og:type" content="article"><meta property="og:title" content="JSDelivr 国内加速技巧｜通过括彩云公益镜像实现高速访问体验"><meta property="og:url" content="http://example.com/posts/b3a5fb17.html"><meta property="og:site_name" content="Eilo小窝"><meta property="og:description" content="什么是 jsDelivr？jsDelivr 是一个非常受欢迎的国外免费 CDN 服务平台，用于加载 JavaScript、CSS、图片等静态资源，能显著减轻服务器压力并加快网站访问速度。 但近年来，由于国内滥用及相关政策原因，jsDelivr 在中国大陆的备案被撤销，导致国内节点被关闭，访问速度变慢"><meta property="og:locale" content="zh-CN"><meta property="og:image" content="https://pic1.imgdb.cn/item/684accf958cb8da5c848a461.png"><meta property="article:author" content="Eilo"><meta property="article:tag"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://pic1.imgdb.cn/item/684accf958cb8da5c848a461.png"><meta name="description" content="什么是 jsDelivr？jsDelivr 是一个非常受欢迎的国外免费 CDN 服务平台，用于加载 JavaScript、CSS、图片等静态资源，能显著减轻服务器压力并加快网站访问速度。 但近年来，由于国内滥用及相关政策原因，jsDelivr 在中国大陆的备案被撤销，导致国内节点被关闭，访问速度变慢"><link rel="shortcut icon" href="/"><link rel="canonical" href="http://example.com/posts/b3a5fb17.html"><link rel="preconnect" href="https://cdn.iocdn.cc"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="xxx"/><meta name="baidu-site-verification" content="code-xxx"/><meta name="msvalidate.01" content="xxx"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.iocdn.cc/npm/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.iocdn.cc/npm/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  linkPageTop: undefined,
+  peoplecanvas: undefined,
+  postHeadAiDescription: {"enable":true,"gptName":"AnZhiYu","mode":"local","switchBtn":false,"btnLink":"https://afdian.net/item/886a79d4db6711eda42a52540025c377","randomNum":3,"basicWordCount":1000,"key":"xxxx","Referer":"https://xx.xx/"},
+  diytitle: {"enable":true,"leaveTitle":"w(ﾟДﾟ)w 不要走！再看看嘛！","backTitle":"♪(^∇^*)欢迎肥来！"},
+  LA51: undefined,
+  greetingBox: undefined,
+  twikooEnvId: '',
+  commentBarrageConfig:undefined,
+  music_page_default: "nav_music",
+  root: '/',
+  preloader: {"source":3},
+  friends_vue_info: undefined,
+  navMusic: true,
+  mainTone: {"mode":"api","api":"https://img2color-go.vercel.app/api?img=","cover_change":true},
+  authorStatus: {"skills":null},
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简","rightMenuMsgToTraditionalChinese":"转为繁体","rightMenuMsgToSimplifiedChinese":"转为简体"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":330},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    simplehomepage: true,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"copy":true,"copyrightEbable":false,"limitCount":50,"languages":{"author":"作者: Eilo","link":"链接: ","source":"来源: Eilo小窝","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。","copySuccess":"复制成功，复制和转载请标注本文地址"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#425AEF","bgDark":"#1f1f1f","position":"top-center"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.iocdn.cc/npm/flickr-justified-gallery@2.1.2/dist/fjGallery.min.js',
+      css: 'https://cdn.iocdn.cc/npm/flickr-justified-gallery@2.1.2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  shortcutKey: undefined,
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  configTitle: 'Eilo小窝',
+  title: 'JSDelivr 国内加速技巧｜通过括彩云公益镜像实现高速访问体验',
+  postAI: '',
+  pageFillDescription: '什么是 jsDelivr？, jsDelivr 的基本使用方式, 加载 JavaScript 库, 加载 CSS 文件, 加载图片等静态资源（GitHub 仓库）, jsDelivr 支持的资源源（加速类型）, jsDelivr 的优缺点, 括彩云加速 —— 国内优化方案, 什么是括彩云？, 优势：, 注意事项：, 如何测速括彩云的性能？, Hexo 博客中如何使用智云 CDN？, 找到主题配置文件, 修改 CDN 设置, 重新部署, 验证是否成功, 总结什么是是一个非常受欢迎的国外免费服务平台用于加载图片等静态资源能显著减轻服务器压力并加快网站访问速度但近年来由于国内滥用及相关政策原因在中国大陆的备案被撤销导致国内节点被关闭访问速度变慢对国内用户体验较差的基本使用方式的使用方式非常灵活主要包括以下几种加载库例如加载使用源指定库名称和版本实际资源路径可以不写版本号加载最新版本但强烈建议写死版本避免意外更新导致项目出错加载文件例如加载加载图片等静态资源仓库使用仓库资源源用户名仓库名可选版本文件路径支持的资源源加速类型源加载上的模块资源源提供经典库如插件源专为插件优化源从仓库加载资源的优缺点优点成熟的全球网络在海外拥有广泛的节点和出色的性能是国际化项目的首选生态丰富支持广泛支持等多种源几乎无所不包免费且社区驱动为开源社区提供了巨大的便利降低了开发门槛强大的版本控制允许你精确锁定资源版本保证项目稳定性缺点国内访问速度是其阿喀琉斯之踵自备案被撤销后国内访问质量时好时坏尤其在网络高峰期或特定地区延迟和丢包现象严重存在被进一步限制的风险由于其服务特性未来仍可能面临国内网络环境的政策变动括彩云加速国内优化方案什么是括彩云括彩云是一个面向国内的替代服务由括彩云国内提供支持专注为中国用户提供更快更稳定的静态资源加载体验地址如下优势国内优先策略所有节点均部署在中国大陆由国内顶尖的云服务商提供支持从根本上解决了跨境访问的延迟问题无缝迁移体验其结构刻意模仿用户几乎只需替换域名即可完成迁移学习成本极低高带宽与稳定性作为公益项目它依然提供了充足的带宽资源确保了在常规使用下的流畅体验注意事项括彩云虽然稳定但仍是公益服务请不要滥用禁止加速图床视频等大文件资源不建议加速字体文件因其频繁变更且体积大如何测速括彩云的性能你可以通过以下方式验证它的加速效果浏览器选项卡查看资源加载速度打开你的网站按键打开开发者工具切换到网络选项卡强制刷新页面或在下方的资源列表中找到以开头的资源查看其加载时间列通常你会看到几十毫秒甚至更快的响应速度使用在线测速网站如输入一个括彩云的资源例如查看全国各地的测速节点的延迟和下载速度结果一目了然测试结论对于目标用户在大陆的网站括彩云的速度和稳定性远超当前的表现但如果你的网站主要服务海外用户那么继续使用仍然是更合适的选择如果网站面向国内用户非常推荐使用括彩云若服务面向海外建议继续使用博客中如何使用智云几乎所有现代主题都支持自定义这里的关键是找到主题配置文件中关于的设置项以主题为例配置步骤如下找到主题配置文件修改设置将设置为主题内部的配置版的主题只能设置为第三方的配置启用自定义选项提供括彩云的模板其中的是主题会自动替换的占位符重新部署验证是否成功部署完成后打开你的网站通过浏览器的源代码或网络面板检查页面引用的资源路径是否已成功替换为如果你使用的是其他主题也可以参考类似配置自行修改总结是一个国际知名的但对国内用户来说访问速度受限而括彩云作为替代方案提供了免费高速稳定的国内加速服务为了让大家都能长期享受该服务我们要不滥用不消耗过多带宽共同维护这个公益项目最后向括彩云及其背后的贡献者们致以诚挚的感谢括彩云官网',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-06-12 21:01:59',
+  postMainColor: '',
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#18171d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f7f9fe')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="Eilo小窝" type="application/atom+xml">
+</head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><img class="loading-img nolazyload" alt="加载头像" src="/avatar.jpg"/><div class="loading-image-dot"></div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.getElementById('loading-box').classList.add("loaded");
+  },
+  initLoading: () => {
+    document.getElementById('loading-box').classList.remove("loaded")
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+setTimeout(function(){preloader.endLoading();},10000)
+
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><link rel="stylesheet" href="https://cdn.iocdn.cc/npm/anzhiyu-theme-static@1.1.10/progress_bar/progress_bar.min.css"/><script async="async" src="https://cdn.iocdn.cc/npm/pace-js@1.2.4/pace.min.js" data-pace-options="{ &quot;restartOnRequestAfter&quot;:false,&quot;eventLag&quot;:false}"></script><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><a id="site-name" href="/" accesskey="h"><div class="title">Eilo小窝</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)" rel="external nofollow noreferrer">PAGE_NAME</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer"><span> 文章</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 归档</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer"><span> 友链</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="anzhiyufont anzhiyu-icon-link faa-tada" style="font-size: 0.9em;"></i><span> 友人帐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-envelope faa-tada" style="font-size: 0.9em;"></i><span> 留言板</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer"><span> 服务</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" target="_blank" rel="noopener external nofollow noreferrer" href="https://github.haib.top/"><i class="anzhiyufont anzhiyu-icon-github faa-tada" style="font-size: 0.9em;"></i><span> GitHub加速</span></a></li><li><a class="site-page child faa-parent animated-hover" target="_blank" rel="noopener external nofollow noreferrer" href="https://mail.haib.top/"><i class="anzhiyufont anzhiyu-icon-envelope faa-tada" style="font-size: 0.9em;"></i><span> 临时邮箱</span></a></li><li><a class="site-page child faa-parent animated-hover" target="_blank" rel="noopener external nofollow noreferrer" href="https://d.haib.top/"><i class="anzhiyufont anzhiyu-icon-link faa-tada" style="font-size: 0.9em;"></i><span> 短链生成</span></a></li><li><a class="site-page child faa-parent animated-hover" target="_blank" rel="noopener external nofollow noreferrer" href="https://libretv.haib.top/"><i class="anzhiyufont anzhiyu-icon-play faa-tada" style="font-size: 0.9em;"></i><span> 影视站</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer"><span> 关于</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> 闲言碎语</span></a></li><li><a class="site-page child faa-parent animated-hover" href="javascript:toRandomPost()" rel="external nofollow noreferrer"><i class="anzhiyufont anzhiyu-icon-shoe-prints1 faa-tada" style="font-size: 0.9em;"></i><span> 随便逛逛</span></a></li></ul></div></div></div><div id="nav-right"><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><div class="nav-button" id="search-button"><a class="site-page social-icon search" href="javascript:void(0);" rel="external nofollow noreferrer" title="搜索🔍" accesskey="s"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span> 搜索</span></a></div><input id="center-console" type="checkbox"/><label class="widget" for="center-console" title="中控台" onclick="anzhiyu.switchConsole();"><i class="left"></i><i class="widget center"></i><i class="widget right"></i></label><div id="console"><div class="console-card-group-reward"><ul class="reward-all console-card"><li class="reward-item"><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png" rel="external nofollow noreferrer" target="_blank"><img class="post-qr-code-img" alt="微信" src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png" rel="external nofollow noreferrer" target="_blank"><img class="post-qr-code-img" alt="支付宝" src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div><div class="console-card-group"><div class="console-card-group-left"><div class="console-card" id="card-newest-comments"><div class="card-content"><div class="author-content-item-tips">互动</div><span class="author-content-item-title"> 最新评论</span></div><div class="aside-list"><span>正在加载中...</span></div></div></div><div class="console-card-group-right"><div class="console-card tags"><div class="card-content"><div class="author-content-item-tips">兴趣点</div><span class="author-content-item-title">寻找你感兴趣的领域</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/CDN/" style="font-size: 1.05rem;">CDN<sup>2</sup></a><a href="/tags/JSDelivr/" style="font-size: 1.05rem;">JSDelivr<sup>1</sup></a><a href="/tags/Vercel/" style="font-size: 1.05rem;">Vercel<sup>1</sup></a><a href="/tags/%E4%BC%98%E9%80%89%E5%9F%9F%E5%90%8D/" style="font-size: 1.05rem;">优选域名<sup>1</sup></a><a href="/tags/%E6%8B%AC%E5%BD%A9%E4%BA%91/" style="font-size: 1.05rem;">括彩云<sup>1</sup></a><a href="/tags/%E7%BD%91%E7%AB%99%E5%8A%A0%E9%80%9F/" style="font-size: 1.05rem;">网站加速<sup>2</sup></a></div></div><hr/></div></div><div class="console-card history"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-box-archiv"></i><span>文章</span></div><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/06/"><span class="card-archive-list-date">六月 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">2</span><span>篇</span></div></a></li></ul></div><hr/></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" title="显示模式切换" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="anzhiyufont anzhiyu-icon-moon"></i></a></div><div class="console-btn-item" id="consoleHideAside" onclick="anzhiyu.hideAsideBtn()" title="边栏显示控制"><a class="asideSwitch"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></a></div><div class="console-btn-item" id="consoleMusic" onclick="anzhiyu.musicToggle()" title="音乐开关"><a class="music-switch"><i class="anzhiyufont anzhiyu-icon-music"></i></a></div></div><div class="console-mask" onclick="anzhiyu.hideConsole()" href="javascript:void(0);" rel="external nofollow noreferrer"></div></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" rel="external nofollow noreferrer" title="切换"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original">原创</a><span class="post-meta-categories"><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-inbox post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/" itemprop="url">开发笔记</a></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/%E7%BD%91%E7%AB%99%E5%8A%A0%E9%80%9F/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>网站加速</span></a><a class="article-meta__tags" href="/tags/CDN/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>CDN</span></a><a class="article-meta__tags" href="/tags/JSDelivr/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>JSDelivr</span></a><a class="article-meta__tags" href="/tags/%E6%8B%AC%E5%BD%A9%E4%BA%91/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>括彩云</span></a></span></div></div><h1 class="post-title" itemprop="name headline">JSDelivr 国内加速技巧｜通过括彩云公益镜像实现高速访问体验</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" itemprop="dateCreated datePublished" datetime="2025-06-12T09:23:40.000Z" title="发表于 2025-06-12 17:23:40">2025-06-12</time><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-history post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" itemprop="dateCreated datePublished" datetime="2025-06-12T13:01:59.552Z" title="更新于 2025-06-12 21:01:59">2025-06-12</time></span></div><div class="meta-secondline"><span class="post-meta-separator"></span><span class="post-meta-wordcount"><i class="anzhiyufont anzhiyu-icon-file-word post-meta-icon" title="文章字数"></i><span class="post-meta-label" title="文章字数">字数总计:</span><span class="word-count" title="文章字数">1.6k</span><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-clock post-meta-icon" title="阅读时长"></i><span class="post-meta-label" title="阅读时长">阅读时长:</span><span>5分钟</span></span><span class="post-meta-separator"></span><span class="post-meta-pv-cv" id="" data-flag-title="JSDelivr 国内加速技巧｜通过括彩云公益镜像实现高速访问体验"><i class="anzhiyufont anzhiyu-icon-fw-eye post-meta-icon"></i><span class="post-meta-label" title="阅读量">阅读量:</span><span id="busuanzi_value_page_pv"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-spin"></i></span></span><span class="post-meta-separator">       </span><span class="post-meta-position" title="作者IP属地为美国"><i class="anzhiyufont anzhiyu-icon-location-dot"></i>美国</span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section><div id="post-top-cover"><img class="nolazyload" id="post-top-bg" src="https://pic1.imgdb.cn/item/684accf958cb8da5c848a461.png"></div></header><main id="blog-container"><div class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container" itemscope itemtype="http://example.com/posts/b3a5fb17.html"><header><a class="post-meta-categories" href="/categories/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/" itemprop="url">开发笔记</a><a href="/tags/%E7%BD%91%E7%AB%99%E5%8A%A0%E9%80%9F/" tabindex="-1" itemprop="url">网站加速</a><a href="/tags/CDN/" tabindex="-1" itemprop="url">CDN</a><a href="/tags/JSDelivr/" tabindex="-1" itemprop="url">JSDelivr</a><a href="/tags/%E6%8B%AC%E5%BD%A9%E4%BA%91/" tabindex="-1" itemprop="url">括彩云</a><h1 id="CrawlerTitle" itemprop="name headline">JSDelivr 国内加速技巧｜通过括彩云公益镜像实现高速访问体验</h1><span itemprop="author" itemscope itemtype="http://schema.org/Person">Eilo</span><time itemprop="dateCreated datePublished" datetime="2025-06-12T09:23:40.000Z" title="发表于 2025-06-12 17:23:40">2025-06-12</time><time itemprop="dateCreated datePublished" datetime="2025-06-12T13:01:59.552Z" title="更新于 2025-06-12 21:01:59">2025-06-12</time></header><h2 id="什么是-jsDelivr？"><a href="#什么是-jsDelivr？" class="headerlink" title="什么是 jsDelivr？"></a>什么是 jsDelivr？</h2><p>jsDelivr 是一个非常受欢迎的<strong>国外免费 CDN 服务平台</strong>，用于加载 JavaScript、CSS、图片等静态资源，能显著减轻服务器压力并加快网站访问速度。</p>
+<p>但近年来，由于<strong>国内滥用</strong>及相关政策原因，jsDelivr 在中国大陆的备案被撤销，导致国内节点被关闭，访问速度变慢，对国内用户体验较差。</p>
+<hr>
+<h2 id="jsDelivr-的基本使用方式"><a href="#jsDelivr-的基本使用方式" class="headerlink" title="jsDelivr 的基本使用方式"></a>jsDelivr 的基本使用方式</h2><p>jsDelivr 的使用方式非常灵活，主要包括以下几种：</p>
+<h3 id="加载-JavaScript-库"><a href="#加载-JavaScript-库" class="headerlink" title="加载 JavaScript 库"></a>加载 JavaScript 库</h3><p>例如加载 jQuery：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>npm/</code>：使用 NPM 源</li>
+<li><code>jquery@3.6.0</code>：指定库名称和版本</li>
+<li><code>dist/jquery.min.js</code>：实际资源路径</li>
+</ul>
+<p>可以不写版本号加载最新版本，但<strong>强烈建议写死版本</strong>避免意外更新导致项目出错。</p>
+<h3 id="加载-CSS-文件"><a href="#加载-CSS-文件" class="headerlink" title="加载 CSS 文件"></a>加载 CSS 文件</h3><p>例如加载 Bootstrap：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="加载图片等静态资源（GitHub-仓库）"><a href="#加载图片等静态资源（GitHub-仓库）" class="headerlink" title="加载图片等静态资源（GitHub 仓库）"></a>加载图片等静态资源（GitHub 仓库）</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/user/repo@version/path/to/image.png&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>使用 GitHub 仓库资源（<code>gh</code> 源）</li>
+<li><code>user/repo</code>：用户名+仓库名</li>
+<li><code>@version</code>：可选版本</li>
+<li><code>/path/to/image.png</code>：文件路径</li>
+</ul>
+<hr>
+<h2 id="jsDelivr-支持的资源源（加速类型）"><a href="#jsDelivr-支持的资源源（加速类型）" class="headerlink" title="jsDelivr 支持的资源源（加速类型）"></a>jsDelivr 支持的资源源（加速类型）</h2><ul>
+<li><strong>NPM 源</strong>：加载 npm 上的模块资源。<br><a target="_blank" rel="noopener external nofollow noreferrer" href="https://cdn.jsdelivr.net/npm/package@version/file">https://cdn.jsdelivr.net/npm/package@version/file</a></li>
+<li><strong>cdnjs 源</strong>：提供经典 JS 库（如 jQuery、Lodash）。<br><a target="_blank" rel="noopener external nofollow noreferrer" href="https://cdn.jsdelivr.net/cdnjs/library/version/file">https://cdn.jsdelivr.net/cdnjs/library/version/file</a></li>
+<li><strong>WordPress 插件源</strong>：专为 WP 插件优化。<br><a target="_blank" rel="noopener external nofollow noreferrer" href="https://cdn.jsdelivr.net/wp/plugin/version/file">https://cdn.jsdelivr.net/wp/plugin/version/file</a></li>
+<li><strong>GitHub 源</strong>：从 GitHub 仓库加载资源。<br><a target="_blank" rel="noopener external nofollow noreferrer" href="https://cdn.jsdelivr.net/gh/user/repo@version/file">https://cdn.jsdelivr.net/gh/user/repo@version/file</a></li>
+</ul>
+<hr>
+<h2 id="jsDelivr-的优缺点"><a href="#jsDelivr-的优缺点" class="headerlink" title="jsDelivr 的优缺点"></a>jsDelivr 的优缺点</h2><p><strong>优点：</strong></p>
+<ul>
+<li><strong>成熟的全球网络：</strong>在海外拥有广泛的节点和出色的性能，是国际化项目的首选。</li>
+<li><strong>生态丰富，支持广泛：</strong>支持 NPM、GitHub 等多种源，几乎无所不包。</li>
+<li><strong>免费且社区驱动：</strong>为开源社区提供了巨大的便利，降低了开发门槛。</li>
+<li><strong>强大的版本控制：</strong>允许你精确锁定资源版本，保证项目稳定性。</li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li><strong>国内访问速度是其“阿喀琉斯之踵”：</strong>自备案被撤销后，国内访问质量时好时坏，尤其在网络高峰期或特定地区，延迟和丢包现象严重。</li>
+<li><strong>存在被进一步限制的风险：</strong>由于其服务特性，未来仍可能面临国内网络环境的政策变动。</li>
+</ul>
+<hr>
+<h2 id="括彩云加速-——-国内优化方案"><a href="#括彩云加速-——-国内优化方案" class="headerlink" title="括彩云加速 —— 国内优化方案"></a>括彩云加速 —— 国内优化方案</h2><h3 id="什么是“括彩云”？"><a href="#什么是“括彩云”？" class="headerlink" title="什么是“括彩云”？"></a>什么是“括彩云”？</h3><p>括彩云是一个<strong>面向国内的 jsDelivr 替代服务</strong>，由括彩云国内CDN提供支持，专注为中国用户提供更快、更稳定的静态资源加载体验。</p>
+<p>地址如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cdn.iocdn.cc</span><br></pre></td></tr></table></figure>
+
+<h3 id="优势："><a href="#优势：" class="headerlink" title="优势："></a>优势：</h3><ul>
+<li><strong>国内优先策略：</strong>所有 CDN 节点均部署在中国大陆，由国内顶尖的云服务商提供支持，从根本上解决了跨境访问的延迟问题。</li>
+<li><strong>无缝迁移体验：</strong>其 URL 结构刻意模仿 jsDelivr，用户几乎只需替换域名即可完成迁移，学习成本极低。</li>
+<li><strong>高带宽与稳定性：</strong>作为公益项目，它依然提供了充足的带宽资源，确保了在常规使用下的流畅体验。</li>
+</ul>
+<h3 id="注意事项："><a href="#注意事项：" class="headerlink" title="注意事项："></a>注意事项：</h3><p>括彩云虽然稳定，但仍是<strong>公益服务</strong>，请不要滥用：</p>
+<ul>
+<li><strong>禁止加速图床、视频</strong>等大文件资源</li>
+<li><strong>不建议加速字体文件</strong>，因其频繁变更且体积大</li>
+</ul>
+<hr>
+<h2 id="如何测速括彩云的性能？"><a href="#如何测速括彩云的性能？" class="headerlink" title="如何测速括彩云的性能？"></a>如何测速括彩云的性能？</h2><p>你可以通过以下方式验证它的加速效果：</p>
+<ul>
+<li><p><strong>Chrome 浏览器 F12 → Network 选项卡</strong>：查看资源加载速度</p>
+<ul>
+<li>打开你的网站，按 F12 键打开开发者工具，切换到 Network (网络) 选项卡。</li>
+<li>强制刷新页面 (Ctrl + F5 或 Cmd + R)。</li>
+<li>在下方的资源列表中，找到以 cdn.iocdn.cc 开头的资源，查看其 Time (加载时间) 列。通常，你会看到几十毫秒甚至更快的响应速度。</li>
+</ul>
+</li>
+<li><p><strong>使用在线测速网站</strong>（如 itdog.cn）</p>
+<ul>
+<li>输入一个括彩云的资源 URL，例如 <code>https://cdn.iocdn.cc/npm/jquery@3.6.0/dist/jquery.min.js</code>。</li>
+<li>查看全国各地的测速节点的延迟和下载速度，结果一目了然。</li>
+</ul>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/684acf1a58cb8da5c848a4e0.png"></p>
+</li>
+</ul>
+<p>测试结论：对于目标用户在大陆的网站，括彩云的速度和稳定性远超当前 jsDelivr 的表现；但如果你的网站主要服务海外用户，那么继续使用 jsDelivr 仍然是更合适的选择。<br>如果网站面向国内用户，非常推荐使用括彩云；若服务面向海外，建议继续使用 jsDelivr。</p>
+<hr>
+<h2 id="Hexo-博客中如何使用智云-CDN？"><a href="#Hexo-博客中如何使用智云-CDN？" class="headerlink" title="Hexo 博客中如何使用智云 CDN？"></a>Hexo 博客中如何使用智云 CDN？</h2><p>几乎所有现代 Hexo 主题都支持自定义 CDN。这里的关键是找到主题配置文件中关于 CDN 的设置项。</p>
+<p>以 <code>hexo-theme-anzhiyu</code> 主题为例，配置步骤如下：</p>
+<h3 id="找到主题配置文件"><a href="#找到主题配置文件" class="headerlink" title="找到主题配置文件"></a>找到主题配置文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">_config.anzhiyu.yml</span><br></pre></td></tr></table></figure>
+
+<h3 id="修改-CDN-设置"><a href="#修改-CDN-设置" class="headerlink" title="修改 CDN 设置"></a>修改 CDN 设置</h3><p>将 CDN 设置为 custom：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">CDN:</span></span><br><span class="line">  <span class="comment"># The CDN provider of internal scripts (主题内部 js 的 cdn 配置)</span></span><br><span class="line">  <span class="comment"># option: local/elemecdn/jsdelivr/unpkg/cdnjs/onmicrosoft/cbd/anheyu/custom</span></span><br><span class="line">  <span class="comment"># Dev version can only choose. ( dev版的主题只能设置为 local )</span></span><br><span class="line">  <span class="attr">internal_provider:</span> <span class="string">local</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># The CDN provider of third party scripts (第三方 js 的 cdn 配置)</span></span><br><span class="line">  <span class="comment"># option: elemecdn/jsdelivr/unpkg/cdnjs/onmicrosoft/cbd/anheyu/custom</span></span><br><span class="line">  <span class="attr">third_party_provider:</span> <span class="string">custom</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Add version number to CDN, true or false</span></span><br><span class="line">  <span class="attr">version:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Custom format</span></span><br><span class="line">  <span class="comment"># For example: https://cdn.staticfile.org/$&#123;cdnjs_name&#125;/$&#123;version&#125;/$&#123;min_cdnjs_file&#125;</span></span><br><span class="line">  <span class="attr">custom_format:</span> <span class="string">https://cdn.iocdn.cc/npm/$&#123;name&#125;@$&#123;version&#125;/$&#123;min_file&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>启用自定义 CDN 选项 (provider: custom)。<br>提供括彩云的 URL 模板 (custom_format)，其中的 ${name}, ${version}, ${min_file} 是主题会自动替换的占位符。</p>
+<h3 id="重新部署"><a href="#重新部署" class="headerlink" title="重新部署"></a>重新部署</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+
+<h3 id="验证是否成功"><a href="#验证是否成功" class="headerlink" title="验证是否成功"></a>验证是否成功</h3><p>部署完成后，打开你的网站，通过浏览器 F12 的“源代码”或“网络”面板，检查页面引用的 JS&#x2F;CSS 资源路径是否已成功替换为 <code>cdn.iocdn.cc</code>。</p>
+<p>如果你使用的是其他主题，也可以参考类似配置，自行修改。</p>
+<hr>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>jsDelivr 是一个国际知名的 CDN，但对国内用户来说，<strong>访问速度受限</strong>。而“括彩云”作为替代方案，提供了<strong>免费、高速、稳定</strong>的国内加速服务。</p>
+<p>为了让大家都能长期享受该服务，我们要：</p>
+<ul>
+<li>不滥用</li>
+<li>不消耗过多带宽</li>
+<li>共同维护这个公益项目</li>
+</ul>
+<p>最后，向括彩云及其背后的贡献者们致以诚挚的感谢！</p>
+<p><strong>括彩云官网：</strong> <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.kuocaicdn.com/">https://www.kuocaicdn.com</a></p>
+</article><div class="post-copyright"><div class="copyright-cc-box"><i class="anzhiyufont anzhiyu-icon-copyright"></i></div><div class="post-copyright__author_box"><a class="post-copyright__author_img" href="/" title="头像"><img class="post-copyright__author_img_back" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/avatar.jpg" title="头像" alt="头像"><img class="post-copyright__author_img_front" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/avatar.jpg" title="头像" alt="头像"></a><div class="post-copyright__author_name">Eilo</div><div class="post-copyright__author_desc">记录着日常生活的小窝</div></div><div class="post-copyright__post__info"><a class="post-copyright__original" title="该文章为原创文章，注意版权协议" href="http://example.com/posts/b3a5fb17.html">原创</a><a class="post-copyright-title"><span onclick="rm.copyPageUrl('http://example.com/posts/b3a5fb17.html')">JSDelivr 国内加速技巧｜通过括彩云公益镜像实现高速访问体验</span></a></div><div class="post-tools" id="post-tools"><div class="post-tools-left"><div class="rewardLeftButton"><div class="post-reward" onclick="anzhiyu.addRewardMask()"><div class="reward-button button--animated" title="赞赏作者"><i class="anzhiyufont anzhiyu-icon-hand-heart-fill"></i>打赏作者</div><div class="reward-main"><div class="reward-all"><span class="reward-title">感谢你赐予我前进的力量</span><ul class="reward-group"><li class="reward-item"><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png" rel="external nofollow noreferrer" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png" rel="external nofollow noreferrer" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul><a class="reward-main-btn" href="/about/#about-reward" target="_blank"><div class="reward-text">赞赏者名单</div><div class="reward-dec">因为你们的支持让我意识到写文章的价值🙏</div></a></div></div></div><div id="quit-box" onclick="anzhiyu.removeRewardMask()" style="display: none"></div></div><div class="shareRight"><div class="share-link mobile"><div class="share-qrcode"><div class="share-button" title="使用手机访问这篇文章"><i class="anzhiyufont anzhiyu-icon-qrcode"></i></div><div class="share-main"><div class="share-main-all"><div id="qrcode" title="http://example.com/posts/b3a5fb17.html"></div><div class="reward-dec">使用手机访问这篇文章</div></div></div></div></div><div class="share-link weibo"><a class="share-button" target="_blank" href="https://service.weibo.com/share/share.php?title=JSDelivr 国内加速技巧｜通过括彩云公益镜像实现高速访问体验&amp;url=http://example.com/posts/b3a5fb17.html&amp;pic=https://pic1.imgdb.cn/item/684accf958cb8da5c848a461.png" rel="external nofollow noreferrer noopener"><i class="anzhiyufont anzhiyu-icon-weibo"></i></a></div><script>function copyCurrentPageUrl() {
+  var currentPageUrl = window.location.href;
+  var input = document.createElement("input");
+  input.setAttribute("value", currentPageUrl);
+  document.body.appendChild(input);
+  input.select();
+  input.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  document.body.removeChild(input);
+}</script><div class="share-link copyurl"><div class="share-button" id="post-share-url" title="复制链接" onclick="copyCurrentPageUrl()"><i class="anzhiyufont anzhiyu-icon-link"></i></div></div></div></div></div><div class="post-copyright__notice"><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow noreferrer" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">Eilo小窝</a>！</span></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__box"><div class="post-meta__box__tag-list"><a class="post-meta__box__tags" href="/tags/%E7%BD%91%E7%AB%99%E5%8A%A0%E9%80%9F/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>网站加速<span class="tagsPageCount">2</span></a><a class="post-meta__box__tags" href="/tags/CDN/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>CDN<span class="tagsPageCount">2</span></a><a class="post-meta__box__tags" href="/tags/JSDelivr/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>JSDelivr<span class="tagsPageCount">1</span></a><a class="post-meta__box__tags" href="/tags/%E6%8B%AC%E5%BD%A9%E4%BA%91/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>括彩云<span class="tagsPageCount">1</span></a></div></div></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/posts/7a6c86f1.html"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/684ab65558cb8da5c8486d9e.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Vercel 托管站点提速技巧｜使用优选域名绕过卡慢节点，全面提升国内访问速度</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="anzhiyufont anzhiyu-icon-thumbs-up fa-fw" style="font-size: 1.5rem; margin-right: 4px"></i><span>喜欢这篇文章的人也看了</span></div><div class="relatedPosts-list"><div><a href="/posts/7a6c86f1.html" title="Vercel 托管站点提速技巧｜使用优选域名绕过卡慢节点，全面提升国内访问速度"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/684ab65558cb8da5c8486d9e.png" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2025-06-12</div><div class="title">Vercel 托管站点提速技巧｜使用优选域名绕过卡慢节点，全面提升国内访问速度</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-content"><div class="author-info__sayhi" id="author-info__sayhi" onclick="anzhiyu.changeSayHelloText()"></div><div class="author-info-avatar"><img class="avatar-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-status"><img class="g-status" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://emotion.acs.pw/emotion/Arcaea/184064226.png" alt="status"/></div></div><div class="author-info__description">感谢你的到访，希望你在这里能找到你需要的知识和教程。</div><div class="author-info__bottom-group"><a class="author-info__bottom-group-left" href="/"><h1 class="author-info__name">Eilo</h1><div class="author-info__desc">记录着日常生活的小窝</div></a><div class="card-info-social-icons is-center"><a class="social-icon faa-parent animated-hover" href="https://github.com/anzhiyu-c" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="anzhiyufont anzhiyu-icon-github"></i></a><a class="social-icon faa-parent animated-hover" href="https://space.bilibili.com/" rel="external nofollow noreferrer" target="_blank" title="BiliBili"><i class="anzhiyufont anzhiyu-icon-bilibili"></i></a></div></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bars"></i><span>文章目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF-jsDelivr%EF%BC%9F"><span class="toc-text">什么是 jsDelivr？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jsDelivr-%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F"><span class="toc-text">jsDelivr 的基本使用方式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%A0%E8%BD%BD-JavaScript-%E5%BA%93"><span class="toc-text">加载 JavaScript 库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%A0%E8%BD%BD-CSS-%E6%96%87%E4%BB%B6"><span class="toc-text">加载 CSS 文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%A0%E8%BD%BD%E5%9B%BE%E7%89%87%E7%AD%89%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90%EF%BC%88GitHub-%E4%BB%93%E5%BA%93%EF%BC%89"><span class="toc-text">加载图片等静态资源（GitHub 仓库）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jsDelivr-%E6%94%AF%E6%8C%81%E7%9A%84%E8%B5%84%E6%BA%90%E6%BA%90%EF%BC%88%E5%8A%A0%E9%80%9F%E7%B1%BB%E5%9E%8B%EF%BC%89"><span class="toc-text">jsDelivr 支持的资源源（加速类型）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jsDelivr-%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9"><span class="toc-text">jsDelivr 的优缺点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8B%AC%E5%BD%A9%E4%BA%91%E5%8A%A0%E9%80%9F-%E2%80%94%E2%80%94-%E5%9B%BD%E5%86%85%E4%BC%98%E5%8C%96%E6%96%B9%E6%A1%88"><span class="toc-text">括彩云加速 —— 国内优化方案</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E2%80%9C%E6%8B%AC%E5%BD%A9%E4%BA%91%E2%80%9D%EF%BC%9F"><span class="toc-text">什么是“括彩云”？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%98%E5%8A%BF%EF%BC%9A"><span class="toc-text">优势：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9%EF%BC%9A"><span class="toc-text">注意事项：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E6%B5%8B%E9%80%9F%E6%8B%AC%E5%BD%A9%E4%BA%91%E7%9A%84%E6%80%A7%E8%83%BD%EF%BC%9F"><span class="toc-text">如何测速括彩云的性能？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo-%E5%8D%9A%E5%AE%A2%E4%B8%AD%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E6%99%BA%E4%BA%91-CDN%EF%BC%9F"><span class="toc-text">Hexo 博客中如何使用智云 CDN？</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%BE%E5%88%B0%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-text">找到主题配置文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9-CDN-%E8%AE%BE%E7%BD%AE"><span class="toc-text">修改 CDN 设置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E6%96%B0%E9%83%A8%E7%BD%B2"><span class="toc-text">重新部署</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%AA%8C%E8%AF%81%E6%98%AF%E5%90%A6%E6%88%90%E5%8A%9F"><span class="toc-text">验证是否成功</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-text">总结</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-history"></i><span>最近发布</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/b3a5fb17.html" title="JSDelivr 国内加速技巧｜通过括彩云公益镜像实现高速访问体验"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/684accf958cb8da5c848a461.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JSDelivr 国内加速技巧｜通过括彩云公益镜像实现高速访问体验"/></a><div class="content"><a class="title" href="/posts/b3a5fb17.html" title="JSDelivr 国内加速技巧｜通过括彩云公益镜像实现高速访问体验">JSDelivr 国内加速技巧｜通过括彩云公益镜像实现高速访问体验</a><time datetime="2025-06-12T09:23:40.000Z" title="发表于 2025-06-12 17:23:40">2025-06-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/7a6c86f1.html" title="Vercel 托管站点提速技巧｜使用优选域名绕过卡慢节点，全面提升国内访问速度"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://pic1.imgdb.cn/item/684ab65558cb8da5c8486d9e.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Vercel 托管站点提速技巧｜使用优选域名绕过卡慢节点，全面提升国内访问速度"/></a><div class="content"><a class="title" href="/posts/7a6c86f1.html" title="Vercel 托管站点提速技巧｜使用优选域名绕过卡慢节点，全面提升国内访问速度">Vercel 托管站点提速技巧｜使用优选域名绕过卡慢节点，全面提升国内访问速度</a><time datetime="2025-06-12T06:30:16.000Z" title="发表于 2025-06-12 14:30:16">2025-06-12</time></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div id="footer_deal"><a class="deal_link" href="mailto:blog@284628.xyz" title="email"><i class="anzhiyufont anzhiyu-icon-envelope"></i></a><a class="deal_link" href="/atom.xml" title="RSS"><i class="anzhiyufont anzhiyu-icon-rss"></i></a><img class="footer_mini_logo" title="返回顶部" alt="返回顶部" onclick="anzhiyu.scrollToDest(0, 500)" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/avatar.jpg" size="50px"/><a class="deal_link" target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/liuyewen111" title="Github"><i class="anzhiyufont anzhiyu-icon-github"></i></a><a class="deal_link" target="_blank" rel="noopener external nofollow noreferrer" href="https://space.bilibili.com/" title="Bilibili"><i class="anzhiyufont anzhiyu-icon-bilibili"></i></a></div><div id="anzhiyu-footer"><div class="footer-group"><div class="footer-title">服务</div><div class="footer-links"><a class="footer-item" title="临时邮箱" target="_blank" rel="noopener external nofollow noreferrer" href="https://mail.284628.xyz">临时邮箱</a><a class="footer-item" title="短链生成" target="_blank" rel="noopener external nofollow noreferrer" href="https://d.haib.top">短链生成</a><a class="footer-item" title="影视站" target="_blank" rel="noopener external nofollow noreferrer" href="https://libretv.haib.top/">影视站</a></div></div><div class="footer-group"><div class="footer-title">导航</div><div class="footer-links"><a class="footer-item" title="即刻短文" href="/essay/">即刻短文</a><a class="footer-item" title="友链文章" href="/fcircle/">友链文章</a><a class="footer-item" title="留言板" href="/comments/">留言板</a></div></div><div class="footer-group"><div class="footer-title">协议</div><div class="footer-links"><a class="footer-item" title="隐私协议" href="/privacy/">隐私协议</a><a class="footer-item" title="Cookies" href="/cookies/">Cookies</a><a class="footer-item" title="版权协议" href="/copyright/">版权协议</a></div></div><div class="footer-group"><div class="footer-title-group"><div class="footer-title">友链</div><a class="random-friends-btn" id="footer-random-friends-btn" href="javascript:addFriendLinksInFooter();" rel="external nofollow noreferrer" title="换一批友情链接"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right"></i></a></div><div class="footer-links" id="friend-links-in-footer"></div></div></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" rel="external nofollow noreferrer" style="margin-inline:5px" data-title="博客框架为Hexo_v5.4.0" title="博客框架为Hexo_v5.4.0"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Frame-Hexo.svg" alt="博客框架为Hexo_v5.4.0"/></a><a class="github-badge" target="_blank" href="https://blog.anheyu.com/" rel="external nofollow noreferrer" style="margin-inline:5px" data-title="本站使用AnZhiYu主题" title="本站使用AnZhiYu主题"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.9/img/Theme-AnZhiYu-2E67D3.svg" alt="本站使用AnZhiYu主题"/></a><a class="github-badge" target="_blank" href="https://www.vercel.com/" rel="external nofollow noreferrer" style="margin-inline:5px" data-title="本站使用Vercel为静态资源提供CDN加速" title="本站使用Vercel为静态资源提供CDN加速"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://cdn.iocdn.cc/badge/CDN-Vercel-black?logo=icloud&amp;logoColor=white&amp;label=CDN&amp;style=flat" alt="本站使用Vercel为静态资源提供CDN加速"/></a><a class="github-badge" target="_blank" href="https://github.com/" rel="external nofollow noreferrer" style="margin-inline:5px" data-title="本站项目由Github托管" title="本站项目由Github托管"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Source-Github.svg" alt="本站项目由Github托管"/></a><a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow noreferrer" style="margin-inline:5px" data-title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/Copyright-BY-NC-SA.svg" alt="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"/></a></p></div><div id="footer-bar"><div class="footer-bar-links"><div class="footer-bar-left"><div id="footer-bar-tips"><div class="copyright">&copy;2020 - 2025 By <a class="footer-bar-link" href="/" title="Eilo" target="_blank">Eilo</a></div></div><div id="footer-type-tips"></div></div><div class="footer-bar-right"><a class="footer-bar-link" target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/anzhiyu-c/hexo-theme-anzhiyu" title="主题">主题</a></div></div></div></footer></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="sidebar-site-data site-data is-center"><a href="/archives/" title="archive"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/" title="tag"><div class="headline">标签</div><div class="length-num">6</div></a><a href="/categories/" title="category"><div class="headline">分类</div><div class="length-num">1</div></a></div></div></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="anzhiyufont anzhiyu-icon-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="anzhiyufont anzhiyu-icon-gear"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="anzhiyufont anzhiyu-icon-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div></div><div id="nav-music"><a id="nav-music-hoverTips" onclick="anzhiyu.musicToggle()" accesskey="m">播放音乐</a><div id="console-music-bg"></div><meting-js id="8152976493" server="netease" type="playlist" mutex="true" preload="none" theme="var(--anzhiyu-main)" data-lrctype="0" order="random" volume="0.7"></meting-js></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="anzhiyufont anzhiyu-icon-xmark"></i></button></nav><div class="is-center" id="loading-database"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-pulse-icon"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="anzhiyufont anzhiyu-icon-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="anzhiyufont anzhiyu-icon-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right" style="font-size: 1rem;"></i></div><div class="rightMenu-item" id="menu-top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuPlugin"><div class="rightMenu-item" id="menu-copytext"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制选中文本</span></div><div class="rightMenu-item" id="menu-pastetext"><i class="anzhiyufont anzhiyu-icon-paste"></i><span>粘贴文本</span></div><a class="rightMenu-item" id="menu-commenttext"><i class="anzhiyufont anzhiyu-icon-comment-medical"></i><span>引用到评论</span></a><div class="rightMenu-item" id="menu-newwindow"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开</span></div><div class="rightMenu-item" id="menu-copylink"><i class="anzhiyufont anzhiyu-icon-link"></i><span>复制链接地址</span></div><div class="rightMenu-item" id="menu-copyimg"><i class="anzhiyufont anzhiyu-icon-images"></i><span>复制此图片</span></div><div class="rightMenu-item" id="menu-downloadimg"><i class="anzhiyufont anzhiyu-icon-download"></i><span>下载此图片</span></div><div class="rightMenu-item" id="menu-newwindowimg"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开图片</span></div><div class="rightMenu-item" id="menu-search"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>站内搜索</span></div><div class="rightMenu-item" id="menu-searchBaidu"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>百度搜索</span></div><div class="rightMenu-item" id="menu-music-toggle"><i class="anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span></div><div class="rightMenu-item" id="menu-music-back"><i class="anzhiyufont anzhiyu-icon-backward"></i><span>切换到上一首</span></div><div class="rightMenu-item" id="menu-music-forward"><i class="anzhiyufont anzhiyu-icon-forward"></i><span>切换到下一首</span></div><div class="rightMenu-item" id="menu-music-playlist" onclick="window.open(&quot;https://y.qq.com/n/ryqq/playlist/8802438608&quot;, &quot;_blank&quot;);" style="display: none;"><i class="anzhiyufont anzhiyu-icon-radio"></i><span>查看所有歌曲</span></div><div class="rightMenu-item" id="menu-music-copyMusicName"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制歌名</span></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" id="menu-randomPost"><i class="anzhiyufont anzhiyu-icon-shuffle"></i><span>随便逛逛</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="anzhiyufont anzhiyu-icon-cube"></i><span>博客分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item" id="menu-copy" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制地址</span></a><a class="rightMenu-item" id="menu-commentBarrage" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="anzhiyufont anzhiyu-icon-message"></i><span class="menu-commentBarrage-text">关闭热评</span></a><a class="rightMenu-item" id="menu-darkmode" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span class="menu-darkmode-text">深色模式</span></a><a class="rightMenu-item" id="menu-translate" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="anzhiyufont anzhiyu-icon-language"></i><span>轉為繁體</span></a></div></div><div id="rightmenu-mask"></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.iocdn.cc/npm/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.iocdn.cc/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script src="https://cdn.iocdn.cc/npm/vanilla-lazyload@17.8.5/dist/lazyload.iife.min.js"></script><script src="https://cdn.iocdn.cc/npm/node-snackbar@0.1.16/dist/snackbar.min.js"></script><canvas id="universe"></canvas><script async src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/dark/dark.js"></script><script>// 消除控制台打印
+var HoldLog = console.log;
+console.log = function () {};
+let now1 = new Date();
+queueMicrotask(() => {
+  const Log = function () {
+    HoldLog.apply(console, arguments);
+  }; //在恢复前输出日志
+  const grt = new Date("04/01/2021 00:00:00"); //此处修改你的建站时间或者网站上线时间
+  now1.setTime(now1.getTime() + 250);
+  const days = (now1 - grt) / 1000 / 60 / 60 / 24;
+  const dnum = Math.floor(days);
+  const ascll = [
+    `欢迎使用安知鱼!`,
+    `生活明朗, 万物可爱`,
+    `
+        
+       █████╗ ███╗   ██╗███████╗██╗  ██╗██╗██╗   ██╗██╗   ██╗
+      ██╔══██╗████╗  ██║╚══███╔╝██║  ██║██║╚██╗ ██╔╝██║   ██║
+      ███████║██╔██╗ ██║  ███╔╝ ███████║██║ ╚████╔╝ ██║   ██║
+      ██╔══██║██║╚██╗██║ ███╔╝  ██╔══██║██║  ╚██╔╝  ██║   ██║
+      ██║  ██║██║ ╚████║███████╗██║  ██║██║   ██║   ╚██████╔╝
+      ╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝   ╚═╝    ╚═════╝
+        
+        `,
+    "已上线",
+    dnum,
+    "天",
+    "©2020 By 安知鱼 V1.6.14",
+  ];
+  const ascll2 = [`NCC2-036`, `调用前置摄像头拍照成功，识别为【小笨蛋】.`, `Photo captured: `, `🤪`];
+
+  setTimeout(
+    Log.bind(
+      console,
+      `\n%c${ascll[0]} %c ${ascll[1]} %c ${ascll[2]} %c${ascll[3]}%c ${ascll[4]}%c ${ascll[5]}\n\n%c ${ascll[6]}\n`,
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      ""
+    )
+  );
+  setTimeout(
+    Log.bind(
+      console,
+      `%c ${ascll2[0]} %c ${ascll2[1]} %c \n${ascll2[2]} %c\n${ascll2[3]}\n`,
+      "color:white; background-color:#4fd953",
+      "",
+      "",
+      'background:url("https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/tinggge.gif") no-repeat;font-size:450%'
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c WELCOME %c 你好，小笨蛋.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(
+      console,
+      "%c ⚡ Powered by 安知鱼 %c 你正在访问 Eilo 的博客.",
+      "color:white; background-color:#f0ad4e",
+      ""
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c W23-12 %c 你已打开控制台.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(console, "%c S013-782 %c 你现在正处于监控中.", "color:white; background-color:#d9534f", "")
+  );
+});</script><script async src="/anzhiyu/random.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><input type="hidden" name="page-type" id="page-type" value="post"></div><script>var visitorMail = "";
+</script><script async data-pjax src="https://cdn.iocdn.cc/npm/anzhiyu-theme-static@1.0.0/waterfall/waterfall.min.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/qrcodejs/1.0.0/qrcode.min.js"></script><link rel="stylesheet" href="https://cdn.iocdn.cc/npm/anzhiyu-theme-static@1.1.9/icon/ali_iconfont_css.min.css"><link rel="stylesheet" href="https://cdn.iocdn.cc/npm/anzhiyu-theme-static@1.0.0/aplayer/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.iocdn.cc/npm/anzhiyu-blog-static@1.0.1/js/APlayer.min.js"></script><script src="https://cdn.iocdn.cc/npm/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script src="https://cdn.iocdn.cc/npm/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+  // removeEventListener scroll 
+  anzhiyu.removeGlobalFnEvent('pjax')
+  anzhiyu.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script charset="UTF-8" src="https://cdn.iocdn.cc/npm/anzhiyu-theme-static@1.1.5/accesskey/accesskey.min.js"></script></div><div id="popup-window"><div class="popup-window-title">通知</div><div class="popup-window-divider"></div><div class="popup-window-content"><div class="popup-tip">你好呀</div><div class="popup-link"><i class="anzhiyufont anzhiyu-icon-arrow-circle-right"></i></div></div></div></body></html>
