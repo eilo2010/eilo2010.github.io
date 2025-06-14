@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>基于 Cloudflare 自建多合一文件分享系统｜Markdown渲染/S3聚合存储/阅后即焚/密码保护/WebDAV挂载</title>
+      <link href="/posts/b69e026c.html"/>
+      <url>/posts/b69e026c.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><strong>GitHub</strong>: <a href="https://github.com/ling-drag0n/CloudPaste" target="_blank" rel="noopener">CloudPaste-基于Cloudflare的在线文本&#x2F;大文件分享平台</a></p><p><strong>首先感谢<a href="https://github.com/2512132839">2512132839</a>大佬的开源!!!</strong></p><h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>CloudPaste是一个内容中转项目。除了支持内容分享、文件管理和WebDAV挂载这些核心功能，项目在细节上也做得非常实用。内置的Markdown编辑器基于Vditor，支持公式、流程图、思维导图等，编辑体验流畅，适合写技术文档或分享笔记。分享时可以设置访问密码、有效期、查看次数限制，还能生成自定义链接和二维码，方便安全地传播内容。内容也支持导出为PDF、图片、Word、HTML等格式，甚至可以生成Raw直链，用于配置文件或代码引用。</p><p>文件上传方面，项目支持多种S3服务，像Cloudflare R2、Backblaze B2、AWS S3都可以接入，通过预签名方式实现高效直传，上传进度实时可见。每个文件还能设置备注、密码、过期时间和访问限制，并支持查看访问统计。WebDAV支持也很完善，可以直接作为网络驱动器挂载，适配Obsidian、Joplin等笔记工具，方便做同步备份或远程文件管理。</p><p>整体体验下来，这个项目不仅功能全面，而且易于使用，适合需要编辑、管理、分享文本和文件的用户。</p><p><img src="https://pic1.imgdb.cn/item/684d79bc58cb8da5c84c569e.png"><br><img src="https://pic1.imgdb.cn/item/684d7a0358cb8da5c84c56ac.png"><br><img src="https://pic1.imgdb.cn/item/684d7a8a58cb8da5c84c56ce.png"><br><img src="https://pic1.imgdb.cn/item/684d7b7a58cb8da5c84c573b.png"><br>kWk-5D_k1toh2wz_j1l8X8OusElNFzpTz1Hl5LF5</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 开发笔记 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>国内走国内 CDN，国外走 Cloudflare｜网站智能分流加速</title>
       <link href="/posts/7e671a83.html"/>
       <url>/posts/7e671a83.html</url>
