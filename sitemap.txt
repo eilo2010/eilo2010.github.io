@@ -1,3 +1,4 @@
+http://example.com/posts/7e671a83.html
 http://example.com/posts/7a6c86f1.html
 http://example.com/posts/b3a5fb17.html
 http://example.com/cookies/index.html
@@ -15,4 +16,7 @@ http://example.com/tags/%E4%BC%98%E9%80%89%E5%9F%9F%E5%90%8D/
 http://example.com/tags/CDN/
 http://example.com/tags/JSDelivr/
 http://example.com/tags/%E6%8B%AC%E5%BD%A9%E4%BA%91/
+http://example.com/tags/VPS/
+http://example.com/tags/Hexo/
+http://example.com/tags/Linux/
 http://example.com/categories/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/
