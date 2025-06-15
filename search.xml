@@ -8,7 +8,7 @@
       <link href="/posts/b69e026c.html"/>
       <url>/posts/b69e026c.html</url>
       
-        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><strong>GitHub</strong>: <a href="https://github.com/ling-drag0n/CloudPaste" target="_blank" rel="noopener">CloudPaste-基于Cloudflare的在线文本&#x2F;大文件分享平台</a></p><p><strong>首先感谢<a href="https://github.com/2512132839">2512132839</a>大佬的开源!!!</strong></p><h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>CloudPaste是一个内容中转项目。除了支持内容分享、文件管理和WebDAV挂载这些核心功能，项目在细节上也做得非常实用。内置的Markdown编辑器基于Vditor，支持公式、流程图、思维导图等，编辑体验流畅，适合写技术文档或分享笔记。分享时可以设置访问密码、有效期、查看次数限制，还能生成自定义链接和二维码，方便安全地传播内容。内容也支持导出为PDF、图片、Word、HTML等格式，甚至可以生成Raw直链，用于配置文件或代码引用。</p><p>文件上传方面，项目支持多种S3服务，像Cloudflare R2、Backblaze B2、AWS S3都可以接入，通过预签名方式实现高效直传，上传进度实时可见。每个文件还能设置备注、密码、过期时间和访问限制，并支持查看访问统计。WebDAV支持也很完善，可以直接作为网络驱动器挂载，适配Obsidian、Joplin等笔记工具，方便做同步备份或远程文件管理。</p><p>整体体验下来，这个项目不仅功能全面，而且易于使用，适合需要编辑、管理、分享文本和文件的用户。</p><p><img src="https://pic1.imgdb.cn/item/684d79bc58cb8da5c84c569e.png"><br><img src="https://pic1.imgdb.cn/item/684d7a0358cb8da5c84c56ac.png"><br><img src="https://pic1.imgdb.cn/item/684d7a8a58cb8da5c84c56ce.png"><br><img src="https://pic1.imgdb.cn/item/684d7b7a58cb8da5c84c573b.png"><br>kWk-5D_k1toh2wz_j1l8X8OusElNFzpTz1Hl5LF5</p>]]></content>
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><strong>GitHub</strong>: <a href="https://github.com/ling-drag0n/CloudPaste" target="_blank" rel="noopener">CloudPaste-基于Cloudflare的在线文本&#x2F;大文件分享平台</a></p><p><strong>首先感谢<a href="https://github.com/2512132839">ling-drag0n</a>大佬的开源!!!</strong></p><h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p>CloudPaste 是一个功能全面且用户友好的内容中转平台，其核心功能与细节设计都颇具亮点：</p><p>核心功能方面：</p><ol><li>支持内容分享、文件管理和WebDAV挂载</li><li>内置基于Vditor的Markdown编辑器，支持公式、流程图、思维导图等技术文档编辑</li><li>提供完善的文件上传功能，兼容多种S3服务（Cloudflare R2&#x2F;Backblaze B2&#x2F;AWS S3）</li></ol><p>特色功能：</p><ul><li>分享设置：可配置访问密码、有效期、查看次数限制</li><li>多种输出格式：支持导出为PDF&#x2F;图片&#x2F;Word&#x2F;HTML等格式</li><li>直链生成：可创建Raw直链用于代码或配置文件引用</li><li>便捷分享：支持生成自定义链接和二维码</li></ul><p>文件管理优势：</p><ol><li>采用预签名直传技术，上传进度实时显示</li><li>支持文件备注、密码保护、过期时间设置</li><li>提供访问统计功能</li><li>完善的WebDAV支持，可挂载为网络驱动器</li><li>适配主流笔记工具（Obsidian&#x2F;Joplin等）</li></ol><p>该项目集编辑、管理、分享功能于一体，特别适合需要处理文本和技术文档的用户，在文件同步备份和远程管理方面也表现出色。</p><p>本文在CloudPaste上也有存档，大家感兴趣的话可以查看: <a href="https://copy.284628.xyz/paste/0l0kqa">基于 Cloudflare 自建多合一文件分享系统｜Markdown渲染&#x2F;S3聚合存储&#x2F;阅后即焚&#x2F;密码保护&#x2F;WebDAV挂载</a></p><h2 id="项目部署"><a href="#项目部署" class="headerlink" title="项目部署"></a>项目部署</h2><p>请看官方部署文档：</p><p><a href="https://github.com/ling-drag0n/CloudPaste/blob/main/README_CN.md" target="_blank" rel="noopener">CloudPaste-部署文档</a></p><h2 id="部署问题答疑"><a href="#部署问题答疑" class="headerlink" title="部署问题答疑"></a>部署问题答疑</h2><p><strong>Q：</strong> 如何 Fork 仓库？</p><p><strong>A：</strong> 可以看下图哦。</p><p><img src="https://pic1.imgdb.cn/item/684d79bc58cb8da5c84c569e.png"></p><p><img src="https://pic1.imgdb.cn/item/684d7a0358cb8da5c84c56ac.png"></p><p><strong>Q：</strong> 如何添加 Secrets？</p><p><strong>A：</strong> 可以看下图哦。</p><p><img src="https://pic1.imgdb.cn/item/684d7a8a58cb8da5c84c56ce.png"></p><p><strong>Q：</strong> 创建新的 API 令牌中的模板是什么？</p><p><strong>A：</strong> 可以看下图哦，就是添加 <code>D1</code> 数据库编辑权限。后面的全部选择包括，资源就是你的账户名称了。</p><p><img src="https://pic1.imgdb.cn/item/684d7b7a58cb8da5c84c573b.png"></p><p><strong>Q：</strong> 为什么按照官方文档中这步骤<strong>重要步骤： 随后要再次运行一遍前端的工作流，以便完成后端域名加载！！！</strong>配置完后无法登录？</p><p><strong>A：</strong> 你在添加完环境变量后要再运行一次后端的工作流，再按官方的步骤运行一次前端的工作流，也就是你提到的这个步骤。</p><p><strong>Q：</strong> 后台管理员的登录密码是什么?</p><p><strong>A：</strong> 官方文档里面有说明呀，用户名: admin, 密码: admin123</p>]]></content>
       
       
       <categories>
@@ -17,6 +17,18 @@
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> Cloudflare </tag>
+            
+            <tag> 开源项目 </tag>
+            
+            <tag> 内容中转 </tag>
+            
+            <tag> Pages </tag>
+            
+        </tags>
       
     </entry>
     
@@ -77,6 +89,37 @@
             <tag> JSDelivr </tag>
             
             <tag> 括彩云 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo 博客集成 Twikoo 评论系统｜基于 Vercel 的免费部署实践</title>
+      <link href="/posts/eb1b023d.html"/>
+      <url>/posts/eb1b023d.html</url>
+      
+        <content type="html"><![CDATA[<p>Twikoo 是一款简洁、安全且免费的静态网站评论系统，通过将其与 Vercel 的免费部署服务相结合，可以为你的 Hexo 博客轻松添加一个功能丰富的互动评论区。本教程将详细介绍如何一步步完成部署和配置。</p><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>在开始之前，请确保你已具备以下条件：</p><ul><li><strong>一个 Hexo 博客：</strong> 并已熟悉其基本操作。</li><li><strong>一个 GitHub 账户：</strong> 用于登录 Vercel 和 MongoDB。</li><li><strong>一个 Vercel 账户：</strong> 用于部署 Twikoo 后端服务。</li><li><strong>一个 MongoDB 账户：</strong> 用于存储评论数据。</li></ul><h2 id="部署流程"><a href="#部署流程" class="headerlink" title="部署流程"></a>部署流程</h2><h3 id="创建-MongoDB-数据库"><a href="#创建-MongoDB-数据库" class="headerlink" title="创建 MongoDB 数据库"></a>创建 MongoDB 数据库</h3><p>Twikoo 需要一个数据库来存储评论数据，MongoDB Atlas 提供了免费的共享数据库，非常适合个人博客使用。</p><ol><li><strong>注册并登录 MongoDB Atlas：</strong> 访问 MongoDB 官网并创建一个账户，你也可以选择使用 Google 账户直接登录。</li><li><strong>创建免费数据库：</strong> 登录后，选择创建一个免费的（Free）共享数据库（Shared Clusters）。在云服务商（Cloud Provider）中推荐选择 AWS，区域（Region）可选择 <code>Oregon (us-west-2)</code>。</li><li><strong>配置数据库用户：</strong> 在 “Database Access” 选项卡下，创建一个新的数据库用户，并记录下你设置的用户名和密码，稍后会用到。</li></ol><p><img src="https://twikoo.js.org/assets/mongodb-1.kzmwAvw2.png"></p><ol start="4"><li><strong>配置网络访问：</strong> 在 “Network Access” 选项卡下，添加一个新的 IP 地址。为了确保 Vercel 能够访问你的数据库，请选择 “Allow Access from Anywhere”（允许任何 IP 地址访问），系统会自动填入 <code>0.0.0.0/0</code>。</li></ol><p><img src="https://twikoo.js.org/assets/mongodb-2.wGC2d7_O.png"></p><ol start="5"><li><strong>获取数据库连接字符串：</strong> 返回 “Database” 页面，点击 “Connect”，选择 “Drivers”。系统会生成一个连接字符串，请将其复制下来，并将 <code>&lt;password&gt;</code> 部分替换为你刚刚创建的数据库密码。</li></ol><p><img src="https://twikoo.js.org/assets/mongodb-3.BlCbBw8p.png"></p><h3 id="使用-Vercel-一键部署-Twikoo"><a href="#使用-Vercel-一键部署-Twikoo" class="headerlink" title="使用 Vercel 一键部署 Twikoo"></a>使用 Vercel 一键部署 Twikoo</h3><p>Vercel 平台可以让你轻松地部署 Twikoo 的后端云函数。</p><ol><li><strong>一键部署：</strong> 点击 Twikoo 官方提供的<a href="https://vercel.com/import/project?template=https://github.com/twikoojs/twikoo/tree/main/src/server/vercel-min">一键部署</a>链接，它会自动引导你到 Vercel 平台并创建一个新的项目。</li><li><strong>配置环境变量：</strong> 在 Vercel 创建项目时，会要求你配置环境变量。 在这里，你需要添加一个名为 <code>MONGODB_URI</code> 的环境变量，其值就是你在第一步中获取并修改好的 MongoDB 连接字符串。</li><li><strong>完成部署：</strong> 点击部署后，Vercel 会自动拉取 Twikoo 的代码并完成部署。部署成功后，Vercel 会为你生成一个域名，例如 <code>your-project-name.vercel.app</code>。这个地址就是你的环境 ID (envId)，请务必记录下来。</li><li><strong>自定义域名：</strong> 因为众所周知的原因，<code>.vercel.app</code>这个后缀的域名在国内几乎无法访问，所以我们需要绑定一个属于自己的自定义域名，如果你还不会，可以参考我的这篇博文：<a href="/posts/7a6c86f1.html">Vercel 托管站点提速技巧｜使用优选域名绕过卡慢节点，全面提升国内访问速度</a></li></ol><h3 id="在-Hexo-主题中配置-Twikoo"><a href="#在-Hexo-主题中配置-Twikoo" class="headerlink" title="在 Hexo 主题中配置 Twikoo"></a>在 Hexo 主题中配置 Twikoo</h3><p>部署好后端服务后，你需要在你的 Hexo 博客中进行前端配置，以便加载评论框。</p><p>几乎所有现代 Hexo 主题都支持自定义评论系统。而这些评论系统中几乎都有Twikoo。这里的关键是找到主题配置文件中关于自定义评论系统的设置项。</p><p>官方文档中列出了常见的 Hexo 主题配置：<a href="https://twikoo.js.org/frontend.html#%E5%9C%A8-hexo-%E4%B8%AD%E4%BD%BF%E7%94%A8">在 Hexo 中使用</a></p><ol><li><strong>修改主题配置文件：</strong> 打开你 Hexo 博客项目中的主题配置文件（通常是 <code>_config.theme.yml</code> 文件）。</li><li><strong>找到评论配置项：</strong> 定位到主题中关于评论系统的配置部分，不同的主题可能会有差异。以 <code>hexo-theme-anzhiyu</code> 主题为例。你需要找到 <code>comments</code> 配置项。</li><li><strong>启用并配置 Twikoo：</strong><ul><li>将评论系统 <code>use</code> 设置为 <code>Twikoo</code>。<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">comments:</span></span><br><span class="line">  <span class="comment"># Up to two comments system, the first will be shown as default</span></span><br><span class="line">  <span class="comment"># Choose: Valine/Waline/Twikoo/Artalk</span></span><br><span class="line">  <span class="attr">use:</span> <span class="string">Twikoo</span> <span class="comment"># Twikoo/Waline</span></span><br><span class="line">  <span class="attr">text:</span> <span class="literal">true</span> <span class="comment"># Display the comment name next to the button</span></span><br><span class="line">  <span class="comment"># lazyload: The comment system will be load when comment element enters the browser&#x27;s viewport.</span></span><br><span class="line">  <span class="comment"># If you set it to true, the comment count will be invalid</span></span><br><span class="line">  <span class="attr">lazyload:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">count:</span> <span class="literal">false</span> <span class="comment"># Display comment count in post&#x27;s top_img</span></span><br><span class="line">  <span class="attr">card_post_count:</span> <span class="literal">false</span> <span class="comment"># Display comment count in Home Page</span></span><br></pre></td></tr></table></figure></li><li>填写 <code>envId</code>，其值就是你在 Vercel 部署成功后获得的地址 (例如：<code>https://xxx.vercel.app</code>)，如果你自定义了域名那就是你的自定义域名(前面记着要填写<code>https://</code>，后面不要留<code>/</code>)<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Twikoo</span></span><br><span class="line"><span class="comment"># https://github.com/imaegoo/twikoo</span></span><br><span class="line"><span class="attr">twikoo:</span></span><br><span class="line">  <span class="attr">envId:</span> <span class="string">https://xxx.vercel.app</span></span><br><span class="line">  <span class="attr">region:</span></span><br><span class="line">  <span class="attr">visitor:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">option:</span></span><br></pre></td></tr></table></figure></li><li>根据你的主题文档，可能还会有其他可配置项，例如是否显示访客信息等，你可以按需进行配置。</li></ul></li></ol><h3 id="第四步：重新部署-Hexo-博客"><a href="#第四步：重新部署-Hexo-博客" class="headerlink" title="第四步：重新部署 Hexo 博客"></a>第四步：重新部署 Hexo 博客</h3><p>完成以上配置后，保存你的主题配置文件，然后执行 Hexo 的标准部署命令，将你的博客重新生成并部署到线上。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure><p>部署完成后，打开你博客的任意一篇文章，如果配置正确，你应该就能在页面底部看到 Twikoo 评论框了。</p><h2 id="初始化管理面板"><a href="#初始化管理面板" class="headerlink" title="初始化管理面板"></a>初始化管理面板</h2><p>首次加载评论区时，点击评论框右下角的齿轮图标，可以设置一个管理密码。 之后你便可以通过这个密码登录管理面板，进行评论管理、邮件通知设置等高级配置。</p><p>至此，你已经成功地为你的 Hexo 博客集成了 Twikoo 评论系统，并利用 Vercel 实现了免费的后端部署。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 开发笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Vercel </tag>
+            
+            <tag> Hexo </tag>
+            
+            <tag> Twikoo </tag>
+            
+            <tag> 评论系统 </tag>
             
         </tags>
       
