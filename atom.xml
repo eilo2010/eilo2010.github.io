@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2025-06-15T05:46:57.468Z</updated>
+  <updated>2025-06-19T06:56:27.792Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>破解 Win11 开机密码｜多途径解决忘记密码的困境</title>
+    <link href="http://example.com/posts/fa005713.html"/>
+    <id>http://example.com/posts/fa005713.html</id>
+    <published>2025-06-19T06:15:36.000Z</published>
+    <updated>2025-06-19T06:56:27.792Z</updated>
+    
+    <content type="html"><![CDATA[<p>如果你忘记了Windows 11电脑的开机密码，或者需要绕过密码进入系统，可以尝试以下几种方法。</p><h2 id="方法一：使用Microsoft账户重置密码（最推荐）"><a href="#方法一：使用Microsoft账户重置密码（最推荐）" class="headerlink" title="方法一：使用Microsoft账户重置密码（最推荐）"></a>方法一：使用Microsoft账户重置密码（最推荐）</h2><p>如果你的Windows 11账户是与<strong>Microsoft账户</strong>关联的，这是最简单和官方的重置密码方法。</p><ol><li><strong>访问Microsoft账户重置页面：</strong> 在另一台可以上网的设备上，打开浏览器访问 <code>account.live.com/password/reset</code>。</li><li><strong>输入你的Microsoft账户：</strong> 按照提示输入与你Windows 11电脑关联的Microsoft邮箱、电话号码或Skype名称，然后点击“下一步”。</li><li><strong>验证身份：</strong> Microsoft会提供几种验证你身份的方式，例如通过发送验证码到备用邮箱或手机。选择一种方式并完成验证。</li><li><strong>设置新密码：</strong> 验证成功后，你就可以设置一个新的密码。</li><li><strong>使用新密码登录Windows 11：</strong> 设置好新密码后，回到你的Windows 11电脑，使用新密码登录即可。</li></ol><h2 id="方法二：使用安全模式和内置管理员账户（如果已启用）"><a href="#方法二：使用安全模式和内置管理员账户（如果已启用）" class="headerlink" title="方法二：使用安全模式和内置管理员账户（如果已启用）"></a>方法二：使用安全模式和内置管理员账户（如果已启用）</h2><p>此方法适用于你忘记了用户密码，但<strong>内置管理员账户</strong>未被禁用，或者你可以在安全模式下访问它。默认情况下，内置管理员账户是禁用的。</p><ol><li><strong>进入Windows 恢复环境（WinRE）：</strong><ul><li>在开机时，当看到Windows Logo出现时，<strong>长按电源按钮强制关机</strong>。重复此操作两到三次，直到电脑进入“<strong>恢复</strong>”界面。</li><li>或者，在登录界面，按住<code>Shift</code>键不放，点击电源图标，然后选择“<strong>重启</strong>”。</li></ul></li><li><strong>选择疑难解答：</strong> 在“选择一个选项”屏幕上，点击“<strong>疑难解答</strong>”。</li><li><strong>选择高级选项：</strong> 点击“<strong>高级选项</strong>”。</li><li><strong>选择启动设置：</strong> 点击“<strong>启动设置</strong>”，然后点击“<strong>重启</strong>”。</li><li><strong>进入安全模式：</strong> 重启后，你会看到一个选项列表。按键盘上的<code>4</code>或<code>F4</code>键选择“<strong>启用安全模式</strong>”。</li><li><strong>使用管理员账户登录：</strong> 在安全模式下，尝试使用内置的“<strong>Administrator</strong>”账户登录（如果它有密码，你需要知道密码）。如果成功登录，你可以修改其他用户账户的密码。</li></ol><h2 id="方法三：使用密码重置盘（如果之前创建过）"><a href="#方法三：使用密码重置盘（如果之前创建过）" class="headerlink" title="方法三：使用密码重置盘（如果之前创建过）"></a>方法三：使用密码重置盘（如果之前创建过）</h2><p>如果你之前在Windows 11电脑上创建了<strong>密码重置盘</strong>（USB闪存驱动器），这是最方便的本地重置密码方式。</p><ol><li><strong>插入密码重置盘：</strong> 将你之前创建的密码重置盘插入锁定的电脑。</li><li><strong>点击“重置密码”：</strong> 在Windows 11登录界面，当你输入错误密码后，通常会出现“重置密码”链接。点击它。</li><li><strong>按照向导操作：</strong> 按照屏幕上的提示，选择你的密码重置盘，然后输入新密码和密码提示。</li><li><strong>完成密码重置：</strong> 完成后，你就可以使用新密码登录了。</li></ol><h2 id="方法四：使用安装介质重置密码（复杂，但有效）"><a href="#方法四：使用安装介质重置密码（复杂，但有效）" class="headerlink" title="方法四：使用安装介质重置密码（复杂，但有效）"></a>方法四：使用安装介质重置密码（复杂，但有效）</h2><p>如果以上方法都不适用，你可以使用命令提示符来重置密码。这个方法相对比较复杂一些。</p><ol><li><p><strong>进入Windows 恢复环境（WinRE）：</strong></p><ul><li>在开机时，当看到Windows Logo出现时，<strong>长按电源按钮强制关机</strong>。重复此操作两到三次，直到电脑进入“<strong>恢复</strong>”界面。</li><li>或者，在登录界面，按住<code>Shift</code>键不放，点击电源图标，然后选择“<strong>重启</strong>”。</li></ul></li><li><p><strong>进入命令提示符：</strong></p><ul><li>在恢复界面，选择“<strong>疑难解答</strong>” &gt; “<strong>高级选项</strong>” &gt; “<strong>命令提示符</strong>”。</li></ul></li><li><p><strong>替换实用工具管理器为命令提示符：</strong></p><ul><li>在命令提示符中，输入以下命令（假设你的Windows安装在<code>C:</code>盘，如果不是，请替换为正确的驱动器号）：</li></ul><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">copy C:\windows\system32\utilman.exe C:\Windows\system32\utilman.exebak</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">copy C:\windows\system32\cmd.exe C:\Windows\system32\utilman.exe</span><br></pre></td></tr></table></figure><ul><li>问你**覆盖 C:\Windows\system32\utilman.exe 吗？(Yes&#x2F;No&#x2F;All):**的时候输入 <code>Yes</code>。</li><li>这些命令会将“轻松使用”按钮（utilman.exe）替换为命令提示符（cmd.exe）。</li></ul></li><li><p><strong>重启电脑并访问命令提示符：</strong> 返回恢复页面，选择“<strong>继续</strong>”。在登录界面，点击右下角的“轻松使用”图标。此时会打开命令提示符。</p></li><li><p><strong>重置密码：</strong> 在命令提示符中，输入以下命令来查看账户名称：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">net user localgroup administrators</span><br></pre></td></tr></table></figure><ul><li>例如：<code>Eilo</code> （那“Eilo”就是你的你的账户名）。<br>输入以下命令来为这个账户重置密码：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">net user &lt;用户名&gt; *</span><br></pre></td></tr></table></figure></li><li>例如：<code>net user Eilo *</code> （将“用户名”替换为你的账户名，一定是<code>小写星号</code>）。</li><li>接下来他就允许你重置密码了，你输入一个新的密码即可。</li></ul></li></ol>]]></content>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;如果你忘记了Windows 11电脑的开机密码，或者需要绕过密码进入系统，可以尝试以下几种方法。&lt;/p&gt;
+&lt;h2 id=&quot;方法一：使用Microsoft账户重置密码（最推荐）&quot;&gt;&lt;a href=&quot;#方法一：使用Microsoft账户重置密码（最推荐）&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Windows" scheme="http://example.com/categories/Windows/"/>
+    
+    
+    <category term="Windows11" scheme="http://example.com/tags/Windows11/"/>
+    
+    <category term="破解密码" scheme="http://example.com/tags/%E7%A0%B4%E8%A7%A3%E5%AF%86%E7%A0%81/"/>
+    
+  </entry>
   
   <entry>
     <title>基于 Cloudflare 自建多合一文件分享系统｜Markdown渲染/S3聚合存储/阅后即焚/密码保护/WebDAV挂载</title>
@@ -102,9 +132,9 @@
     
     <category term="CDN" scheme="http://example.com/tags/CDN/"/>
     
-    <category term="Cloudflare" scheme="http://example.com/tags/Cloudflare/"/>
-    
     <category term="智能分流" scheme="http://example.com/tags/%E6%99%BA%E8%83%BD%E5%88%86%E6%B5%81/"/>
+    
+    <category term="Cloudflare" scheme="http://example.com/tags/Cloudflare/"/>
     
   </entry>
   
